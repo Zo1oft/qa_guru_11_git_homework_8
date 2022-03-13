@@ -1,5 +1,6 @@
 package guru.qa;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -14,5 +15,10 @@ public class SimpleTest {
     @Test
     void assertFalseTest() {
         assertTrue(3 < 2);
+    }
+
+    @Test
+    void assertFailTest() {
+        Assertions.fail();
     }
 }
