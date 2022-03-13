@@ -10,4 +10,8 @@ public class SimpleTest {
     void assertTrueTest() {
         assertTrue(3>2);
     }
+    @Test
+    void assertFalseTest() {
+        assertTrue(3<2);
+    }
 }
