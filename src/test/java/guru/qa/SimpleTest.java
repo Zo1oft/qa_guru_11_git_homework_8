@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class SimpleTest {
 
@@ -20,5 +21,10 @@ public class SimpleTest {
     @Test
     void assertFailTest() {
         Assertions.fail();
+    }
+
+    @Test
+    void assertAnotherFailTest() {
+        fail("another fail");
     }
 }
