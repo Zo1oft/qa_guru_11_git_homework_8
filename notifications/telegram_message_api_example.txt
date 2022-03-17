@@ -1,0 +1,12 @@
+BOT_TOKEN 5130964495:AAH-JTtku9R_loyPzyEtKgTVPCoj0d1DPbI
+CHAT_ID -1001462158662
+
+// Command in many lines (\ as separator)
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001462158662", "text": "This is a test from qa.guru"}' \
+     https://api.telegram.org/bot5130964495:AAH-JTtku9R_loyPzyEtKgTVPCoj0d1DPbI/sendMessage
+
+// Command in one line
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001462158662", "text": "This is a test from Max"}' https://api.telegram.org/bot5130964495:AAH-JTtku9R_loyPzyEtKgTVPCoj0d1DPbI/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "47436725", "text": "This is a test from qa.guru"}' https://api.telegram.org/bot5130964495:AAH-JTtku9R_loyPzyEtKgTVPCoj0d1DPbI/sendMessage
